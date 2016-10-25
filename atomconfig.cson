@@ -1,0 +1,11 @@
+"*":
+  core:
+    disabledPackages: [
+      "background-tips"
+      "exception-reporting"
+      "metrics"
+    ]
+  editor:
+    tabType: "soft"
+  welcome:
+    showOnStartup: false
