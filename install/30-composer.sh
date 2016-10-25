@@ -6,3 +6,7 @@ installing "Composer packages"
 
 installing "Laravel Valet"
 ${HOME}/.composer/vendor/bin/valet install
+
+mkdir "${HOME}/Sites"
+cd "${HOME}/Sites"
+${HOME}/.composer/vendor/bin/valet park
