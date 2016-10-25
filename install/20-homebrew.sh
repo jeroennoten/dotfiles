@@ -1,7 +1,7 @@
 installing "Homebrew"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-for tool in python3 homebrew/php/php70 mariadb
+for tool in python3 homebrew/php/php70 mariadb composer
 do
   installing "${tool} via Homebrew"
   brew install "${tool}"
