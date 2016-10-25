@@ -4,7 +4,7 @@ source "${DIR}/../functions.sh"
 installing "Homebrew"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-for tool in python3 homebrew/php/php70 mariadb composer
+for tool in python3 homebrew/php/php70 mariadb composer mas hub
 do
   installing "${tool} via Homebrew"
   brew install "${tool}"
@@ -55,3 +55,6 @@ for tool in atom firefox teamviewer texmaker the-unarchiver virtualbox vlc
 do
   caskinstall "${tool}"
 done
+
+installing "Xcode"
+mas install 497799835 # Xcode
