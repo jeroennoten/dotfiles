@@ -13,10 +13,45 @@ done
 message "Starting MariaDB..."
 brew services start mariadb
 
-for tool in dropbox adobe-creative-cloud microsoft-office atom firefox flux \
-goofy google-chrome google-drive jetbrains-toolbox spotify teamviewer texmaker \
-the-unarchiver toggldesktop virtualbox vlc whatsapp phpstorm
+function caskinstall {
+  installing "${1} via Homebrew Cask"
+  brew cask install "${1}"
+}
+
+caskinstall dropbox
+open "/Applications/Dropbox.app"
+
+caskinstall microsoft-office
+open "/Applications/Microsoft Word.app"
+
+caskinstall adobe-creative-cloud
+open "/usr/local/Caskroom/adobe-creative-cloud/latest/Creative Cloud Installer.app"
+
+caskinstall google-drive
+open "/Applications/Google Drive.app"
+
+caskinstall spotify
+open "/Applications/Spotify.app"
+
+caskinstall toggldesktop
+open "/Applications/TogglDesktop.app"
+
+caskinstall whatsapp
+open "/Applications/WhatsApp.app"
+
+caskinstall flux
+open "/Applications/Flux.app"
+
+caskinstall goofy
+open "/Applications/Goofy.app"
+
+caskinstall google-chrome
+open "/Applications/Google Chrome.app"
+
+caskinstall jetbrains-toolbox
+open "/Applications/JetBrains Toolbox.app"
+
+for tool in atom firefox teamviewer texmaker the-unarchiver virtualbox vlc
 do
-  installing "${tool} via Homebrew Cask"
-  brew cask install "${tool}"
+  caskinstall "${tool}"
 done
