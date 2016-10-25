@@ -10,8 +10,8 @@ done
 message "Starting MariaDB..."
 brew services start mariadb
 
-for tool in dropbox adobe-creative-cloud microsoft-office atom firefox flux\
-goofy google-chrome google-drive jetbrains-toolbox spotify teamviewer texmaker\
+for tool in dropbox adobe-creative-cloud microsoft-office atom firefox flux \
+goofy google-chrome google-drive jetbrains-toolbox spotify teamviewer texmaker \
 the-unarchiver toggldesktop virtualbox vlc whatsapp phpstorm
 do
   installing "${tool} via Homebrew Cask"
