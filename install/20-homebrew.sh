@@ -1,4 +1,5 @@
-source ../functions.sh
+DIR="$(cd "$(dirname "${0}")" && pwd)"
+source "${DIR}/../functions.sh"
 
 installing "Homebrew"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"

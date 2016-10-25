@@ -1,4 +1,5 @@
-source ../functions.sh
+DIR="$(cd "$(dirname "${0}")" && pwd)"
+source "${DIR}/../functions.sh"
 
 installing "Node"
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh | bash

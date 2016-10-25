@@ -1,4 +1,5 @@
-source ../functions.sh
+DIR="$(cd "$(dirname "${0}")" && pwd)"
+source "${DIR}/../functions.sh"
 
 installing "Composer packages"
 /usr/local/bin/composer global require laravel/installer laravel/valet
