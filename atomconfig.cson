@@ -5,6 +5,7 @@
       "exception-reporting"
       "metrics"
     ]
+    telemetryConsent: "no"
   editor:
     tabType: "soft"
   welcome:
