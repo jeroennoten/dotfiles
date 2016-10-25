@@ -1,0 +1,9 @@
+[user]
+	name = Jeroen Noten
+	email = jeroennoten@me.com
+[credential]
+  helper = osxkeychain
+[core]
+	excludesfile = ~/.gitignore
+[push]
+	default = simple
