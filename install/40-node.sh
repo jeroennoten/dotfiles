@@ -10,4 +10,4 @@ export NVM_DIR="/Users/jeroennoten/.nvm"
 nvm install node
 
 installing "Node packages"
-npm -g install ionic cordova vue-cli gulp
+npm -g install ionic cordova vue-cli gulp ios-sim ios-deploy
